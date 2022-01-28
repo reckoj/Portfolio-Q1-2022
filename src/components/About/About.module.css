@@ -1,0 +1,150 @@
+.mainContainer {
+	display: flex;
+	height: 600px;
+	padding-top: 10px;
+	position: relative;
+	background: rgb(0, 0, 0);
+	background: rgb(59, 28, 28);
+	background: linear-gradient(
+		61deg,
+		rgba(59, 28, 28, 1) 52%,
+		rgba(0, 0, 0, 1) 52%
+	);
+}
+
+.detailsTextContainer {
+	align-items: center;
+	justify-content: center;
+}
+
+.detailsH1 {
+	font-family: 'poppins', sans-serif;
+	letter-spacing: 2.5px;
+
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffe163;
+}
+
+.detailsPara1 {
+	font-family: 'poppins', sans-serif;
+	margin-inline: 20rem;
+	font-size: 20px;
+	color: #000000;
+	line-height: 25px;
+}
+
+.mainContainer .detailsColumns {
+	position: absolute;
+	top: 22rem;
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	/*breakpoint*/
+	.detailsColumns {
+		flex-direction: column;
+	}
+}
+
+.mainContainer .detailsColumns .img1 {
+	position: absolute;
+
+	width: 70px;
+	height: 70px;
+}
+.mainContainer .detailsColumns .img2 {
+	position: absolute;
+
+	width: 70px;
+	height: 70px;
+}
+.mainContainer .detailsColumns .img3 {
+	position: absolute;
+
+	width: 70px;
+	height: 70px;
+}
+
+.mainContainer .detailsColumn .detailsh4 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-family: 'poppins', sans-serif;
+	color: #ffe163;
+	text-align: center;
+}
+
+.mainContainer .detailsColumn .detailsP {
+	font-family: 'poppins', sans-serif;
+	color: #fff;
+	font-size: 12px;
+}
+
+.mainContainer .hr {
+	z-index: 1;
+	display: flex;
+	width: 40px;
+	border: none;
+	height: 3px;
+	margin-top: 110px;
+
+	background-color: #ffe163;
+}
+
+/*
+
+
+
+MOBILE START
+
+*/
+@media (max-width: 900px) {
+	.detailsPara1 {
+		font-family: 'poppins', sans-serif;
+		width: 90%;
+		margin-left: 25px;
+		font-size: 15px;
+		color: #000000;
+		line-height: 25px;
+		text-align: center;
+	}
+}
+@media (max-width: 768px) {
+	/*breakpoint*/
+
+	.mainContainer {
+		display: flex;
+		height: 1280px;
+		padding-top: 10px;
+		position: relative;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			61deg,
+			rgba(59, 28, 28, 1) 52%,
+			rgba(0, 0, 0, 1) 52%
+		);
+	}
+	.mainContainer .detailsTextContainer {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.mainContainer .detailsTextContainer .detailsH1 {
+		position: absolute;
+		font-family: 'poppins', sans-serif;
+		color: #ffe163;
+	}
+
+	.detailsPara1 {
+		font-family: 'poppins', sans-serif;
+		width: 90%;
+		margin-left: 25px;
+		font-size: 15px;
+		color: #000000;
+		line-height: 25px;
+		text-align: center;
+	}
+}

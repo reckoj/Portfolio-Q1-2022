@@ -1,0 +1,110 @@
+@keyframes track-in-out {
+	0% {
+		letter-spacing: 1em;
+		opacity: 0;
+	}
+	20% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+	80% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+	100% {
+		letter-spacing: 1em;
+		opacity: 0;
+	}
+}
+
+.wrapper {
+	display: flex;
+	padding-top: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: rgb(59, 28, 28);
+	background: linear-gradient(
+		61deg,
+		rgba(59, 28, 28, 1) 52%,
+		rgba(0, 0, 0, 1) 52%
+	);
+}
+
+.container {
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	width: 280px;
+	height: 380px;
+	margin-inline: 3.5rem;
+	border-bottom: solid 1px red;
+}
+
+.bannerimg {
+	position: absolute;
+	height: 10rem;
+	width: 100%;
+}
+.bannerimg2 {
+	position: absolute;
+	height: 10rem;
+	width: 100%;
+}
+.bannerimg3 {
+	position: absolute;
+	height: 10rem;
+	width: 100%;
+}
+
+.name {
+	position: absolute;
+	width: 100%;
+	top: 11rem;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffe163;
+	left: 0;
+}
+
+.description {
+	position: absolute;
+	width: 100%;
+	top: 14rem;
+	font-size: 0.9rem;
+	color: white;
+	margin-inline: 2rem;
+}
+
+.mainContainer .hr {
+	z-index: 1;
+	display: flex;
+	width: 40px;
+	border: none;
+	height: 3px;
+	margin-top: 110px;
+
+	background-color: #ffe163;
+}
+/*
+
+
+MOBILE START
+
+*/
+@media (max-width: 768px) {
+	/*breakpoint*/
+
+	.wrapper {
+		display: flex;
+		height: 1280px;
+		padding-top: 10px;
+		position: relative;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			61deg,
+			rgba(59, 28, 28, 1) 52%,
+			rgba(0, 0, 0, 1) 52%
+		);
+	}
+}

@@ -1,0 +1,136 @@
+@keyframes track-in-out {
+	0% {
+		letter-spacing: 1em;
+		opacity: 0;
+	}
+	20% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+	80% {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+	100% {
+		letter-spacing: 1em;
+		opacity: 0;
+	}
+}
+
+.wrapper {
+	display: flex;
+	height: 800px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: rgb(59, 28, 28);
+	background: linear-gradient(
+		61deg,
+		rgba(59, 28, 28, 1) 52%,
+		rgba(0, 0, 0, 1) 52%
+	);
+}
+
+.container {
+	overflow: hidden;
+	box-shadow: 0px 0px 12px 0px #9e7777;
+	text-align: center;
+	position: relative;
+	width: 280px;
+	height: 340px;
+	margin-bottom: 1rem;
+	margin-inline: 3.5rem;
+	animation-name: track-in-out;
+	animation-duration: 10s;
+	animation-iteration-count: 3;
+}
+
+.bannerimg {
+	position: absolute;
+	background-image: url('../../images/space.png');
+	height: 10rem;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bannerimg2 {
+	position: absolute;
+	background-image: url('../../images/rest-api.png');
+	height: 10rem;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bannerimg3 {
+	position: absolute;
+	background-image: url('../../images/places.png');
+	height: 10rem;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.name {
+	position: absolute;
+	width: 100%;
+	top: 11rem;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffe163;
+	left: 0;
+}
+
+.description {
+	position: absolute;
+
+	top: 14rem;
+	font-size: 0.9rem;
+	color: white;
+	margin-inline: 2rem;
+}
+
+.btn {
+	font-family: 'poppins', sans-serif;
+	border: solid #ffe163 1px;
+	cursor: pointer;
+	width: 120px;
+	height: 25px;
+	font-size: 1rem;
+	color: white;
+	font-size: 1rem;
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	bottom: 0rem;
+}
+
+.btn:hover {
+	color: rgb(212, 175, 55);
+	font-family: 'poppins', sans-serif;
+}
+
+/*
+
+
+MOBILE START
+
+*/
+@media (max-width: 768px) {
+	/*breakpoint*/
+
+	.wrapper {
+		display: flex;
+		height: 1280px;
+		padding-top: 10px;
+		position: relative;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			61deg,
+			rgba(59, 28, 28, 1) 52%,
+			rgba(0, 0, 0, 1) 52%
+		);
+	}
+}
